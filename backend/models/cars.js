@@ -20,7 +20,7 @@ const carSchema = new mongoose.Schema({
   },
   Price: {
     type: Number,
-    required: true
+    required: false
   },
   CarType: {
     type: String,
