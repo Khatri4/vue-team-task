@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+ 
 const carSchema = new mongoose.Schema({
   Brand: {
     type: String,
@@ -29,12 +29,10 @@ const carSchema = new mongoose.Schema({
   },
   Images: {
     type: [String],
-    required: false
+    required: true
   }
 });
-
+ 
 const Car = mongoose.model('Car', carSchema);
-
+ 
 module.exports = Car;
-
-
